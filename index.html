@@ -151,7 +151,7 @@ if(typeof(EventSource) !== "undefined") {
 <div class="form-container">
     <h2>Contact Me</h2>
 
-    <form id="contactForm" action="C:\Users\kayee\Documents\contact.php" method="post" novalidate>
+    <form id="contactForm" action="contact.php" method="post" novalidate>
 
         <label for="name">Full Name</label>
         <input type="text" id="name" name="name" placeholder="Your name" required>
@@ -196,7 +196,7 @@ document.getElementById("contactForm").addEventListener("submit", async function
 
     const formData = new FormData(this);
 
-    const response = await fetch("C:\Users\kayee\Documents\contact.php", {
+    const response = await fetch("contact.php", {
         method: "POST",
         body: formData
     });
@@ -233,9 +233,10 @@ function error() {
 
 <footer>
 <br>
-  <p>&copy; 2025 Kaye Eloisa Arnejo. All rights reserved.</p>
+  <p>&copy; 2025-2026 Kaye Eloisa Arnejo. All rights reserved.</p>
 </footer>
 
 </body>
 </html>
+
 
