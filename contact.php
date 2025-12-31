@@ -105,7 +105,7 @@ if (!$written) {
 }
 
 // Send email to site owner (simple mail()). Adjust $ownerEmail and headers as needed.
-$ownerEmail = 'you@example.com'; // <-- CHANGE this to your real email before deploying
+$ownerEmail = 'kaye.eloisa@hotmail.com'; // <-- CHANGE this to your real email before deploying
 $subjectLine = '[Contact Form] ' . $entry['subject'];
 $emailBody = "New contact form submission:\n\n"
     . "Name: {$entry['name']}\n"
@@ -135,3 +135,4 @@ if ($mailSent) {
     // still OK because saved to file; warn user that email failed (you can still process submissions from contacts.json)
     echo json_encode(['ok' => true, 'message' => 'Message saved. Email could not be sent from this server; please check mail settings.']);
 }
+
